@@ -19,6 +19,7 @@ class PostController extends Controller
         }
         else{
             $posts = Post::latest();
+            $lists = Post::where('category_id', 2)->latest();
         }
         //  if($categorySlug){
         //     // $posts = $category->post()->latest();
@@ -34,9 +35,13 @@ class PostController extends Controller
     		$posts->where('user_id', $user->id);
     	}
     	$posts = $posts->latest()->get();
+        $lists = Post::where('category_id', 2)->latest()->get();
         
     	
-        return view('posts.index', compact('posts'));
+        return view('posts.index', [
+            'posts' => $posts,
+            'lists' => $lists
+        ]);
     }
 
     public function show($category, Post $post){

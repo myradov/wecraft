@@ -34,8 +34,10 @@
 	<div class="content">
 		<div class="row">
 			<div class="col">
-				@foreach($posts as $post)
-					<h2><a href="/posts/{{$category->slug}}">{{ $post->title }}</a></h3>
+				<h1>Programming Jobs</h1>
+				@foreach($lists as $list)
+					<h2><a href="{{$list->path()}}">{{ $list->title }}</a></h2>
+					<p>{{ $list->description }}</p>
 				@endforeach
 			</div>
 		</div>
