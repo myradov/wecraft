@@ -1,3 +1,6 @@
+## About Wecraft
+Wecraft is a practical project related to searching for jobs and posting job vacancies
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
@@ -12,5 +15,4 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## About Wecraft
-Wecraft is a practical project related to searching for jobs and posting job vacancies
+
