@@ -10,7 +10,7 @@
 					      {{-- 	<h4 class="card-title"><a href="/posts/{{ $post->category->slug }}/{{ $post->id }}" class="card-link">{{ $post->title }}</a></h4> --}}
 					      	<h4 class="card-title"><a href="{{ $post->path()}}" class="card-link">{{ $post->title }}</a></h4>
 					      	<p class="card-text">{{ $post->description }}</p>
-					      	<p class="card-text"><small class="text-muted">{{ $post->created_at }}</small></p>
+					      	<p class="card-text"><small class="text-muted">{{ $post->created_at->diffForHumans() }}</small></p>
 					      	<small>{{ $post->category->name }}</small>
 					    </div>
 					</div>
